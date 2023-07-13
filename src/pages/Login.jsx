@@ -37,7 +37,6 @@ function Login() {
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) {
-      setLoader(false);
       navigate('/');
     }
   });
